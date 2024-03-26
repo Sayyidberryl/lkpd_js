@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const kode = "71306200718";
+
+        const golongan = kode[0];
+        const tanggalLahir = kode.slice(1, 9);
+        const urut = kode.slice(9);
+
+
+        const bulanhuruf = ["JAN", "FEB", "MAR", "APR", "MEI", "JUN", "JUL", "AGU", "SEP", "OKT", "NOV", "DES"];
+        const bulannum = parseInt(tanggalLahir.slice(2, 4), 10) - 1;
+        const namabulan = bulanhuruf[bulannum];
+
+
+
+        document.write("<p>Nomor Golongan: " + golongan + "</p>");
+        document.write("<p>Tanggal Lahir: " + tanggalLahir.slice(0, 2) + "-" + namabulan + "-" + tanggalLahir.slice(4) + "</p>");
+        document.write("<p>Nomor Urut: " + urut + "</p>");
+        document.write("<p>Bulan numerik: " + bulannum + "</p>");
+
+    </script>
+</body>
+
+</html>

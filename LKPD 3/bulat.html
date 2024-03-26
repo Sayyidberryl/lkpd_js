@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let inputNumber = 1234567; 
+
+
+let satuan = inputNumber % 10;
+let puluhan = Math.floor((inputNumber / 10) % 10);
+let ratusan = Math.floor((inputNumber / 100) % 10);
+
+
+document.write(`${satuan} satuan,  ${puluhan} puluhan,  ${ratusan} ratusan.`);
+
+    </script>
+</body>
+</html>
